@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
 :root {
     --cor-do-fundo: #1e1e1e;
@@ -41,6 +41,4 @@ body {
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-
-
 }
