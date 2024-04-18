@@ -27,5 +27,3 @@ function calculaTempo(tempoObjetivo1) {
     let dias = Math.floor (horas / 24);
     return dias;
 }
-
-
