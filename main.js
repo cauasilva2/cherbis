@@ -48,7 +48,7 @@ function calculaTempo(tempoObjetivo1) {
         atualizaCronometro();
         setInterval(atualizaCronometro, 1000);
     }
-    
+
     comecaCronometro();
     function calculaTempo(tempoObjetivo1) {
         let tempoAtual = new Date();
@@ -66,7 +66,7 @@ function calculaTempo(tempoObjetivo1) {
             return dias + 'dias' + horas + 'horas' + minutos + 'minutos' + segundos + 'segundos';
         }
         else {
-            return 'Tempo Esgotado'
+            return 'Tempo Esgotado';
         }
     }
 
