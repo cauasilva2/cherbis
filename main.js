@@ -19,10 +19,21 @@ const tempoObjetivo2 = new Date('2024-10-05T00:00:00');
 const tempoObjetivo3 = new Date('2024-10-05T00:00:00');
 const tempoObjetivo4 = new Date('2024-10-05T00:00:00');
 
+<<<<<<< HEAD
+const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
+=======
 const textos = [tempoObjetivo1, tempoObjetivo2 tempoObjetivo3, tempoObjetivo4];
+>>>>>>> 5cef41a3a352b9329d54b6a15d2d1821a64cc957
 
+<<<<<<< HEAD
+function atualizaCronometro() {
+    for (let i = 0; j < contadores.length; i++) {
+        contadores[i].textContent = calculaTempo(tempos[i]);
+    }
+}
+=======
  for (let i = 0; i < contadores . length; i++){
-      contadores[i] . textContent = calculaTempo( tempos[i]);
+      contadores[i].textContent = calculaTempo( tempos[i]);
       
  }
 
@@ -33,11 +44,30 @@ function calculaTempo(tempoObjetivo1) {
     let minutos = Math.floor(segundos / 60);
     let horas = Math.floor (minutos / 60);
     let dias = Math.floor (horas / 24);
+>>>>>>> 5cef41a3a352b9329d54b6a15d2d1821a64cc957
 
-    segundos %= 60;
-    minutos %= 60;
-    horas  %= 24;
-    
+function comecaCronometro() {
+    atualizaCronometro();
+    setInterval(atualizaCronometro, 1000);
+}
+comecaCronometro();
+function calculaTempo(tempoObjetivo1){
+let tempoAtual = new Date();
+let tempoFinal = tempoObjetivo1 - tempoAtual;
+let segundos = Math.floor(tempoFinal / 1000);
+let minutos = Math.floor(segundos / 60);
+let horas = Math.floor(minutos / 60);
+let dias = Math.floor(horas / 24);
+
+segundos %= 60;
+minutos %= 60;
+horas %= 24;
+
+if (tempoFinal > 0) {
     return dias + 'dias' + horas + 'horas' + minutos + 'minutos' + segundos + 'segundos';
+}
+else {
+    return 'Tempo Esgotado'
+}
 }
 
