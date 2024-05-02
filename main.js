@@ -22,8 +22,7 @@ const tempoObjetivo4 = new Date('2024-10-05T00:00:00');
 <<<<<<< HEAD
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 =======
-const textos = [tempoObjetivo1, tempoObjetivo2 tempoObjetivo3, tempoObjetivo4];
->>>>>>> 5cef41a3a352b9329d54b6a15d2d1821a64cc957
+>>>>>> 5cef41a3a352b9329d54b6a15d2d1821a64cc957
 
 <<<<<<< HEAD
 function atualizaCronometro() {
